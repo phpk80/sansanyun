@@ -45,6 +45,8 @@ class Sansanyun
         str_replace('\\','/',$class);
 
         $file = SANSANYUN.'/'.$class.'.php';
+        dump($file);
+        exit();
         if(strtolower(MODULE)=='api'&&strpos($class,'Control')!==false){
             $file = SANSANYUN.'/'.$class.'.api.php';
         }
