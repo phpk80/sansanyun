@@ -42,11 +42,10 @@ class Sansanyun
     //自动加载类
     static function load($class){
 
-        str_replace('\\','/',$class);
+        $class = str_replace('\\','/',$class);
 
         $file = SANSANYUN.'/'.$class.'.php';
-        dump($file);
-        exit();
+
         if(strtolower(MODULE)=='api'&&strpos($class,'Control')!==false){
             $file = SANSANYUN.'/'.$class.'.api.php';
         }
