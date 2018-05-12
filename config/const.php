@@ -3,6 +3,8 @@ if (!defined('in_sansan')) {exit('Access Denied');}
 
 /* 常量 */
 //cookie作用域
+
+
 const cookiedomain = '';
 const authCodeLen  = 6;//验证码长度
 /*商品状态*/
