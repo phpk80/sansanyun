@@ -25,7 +25,7 @@ function Model($tabName=null){
 
         $conf = \core\lib\Conf::get('db','db_type');
 
-        $class="core\\db\\driver\\Db_Adapter_".$conf;
+        $class="core\\db\\driver\\Db_Adapter_".ucwords($conf);
         $db= new $class();
         //生成表结构
         if(!is_null($tabName)){
