@@ -52,12 +52,12 @@
                 {if $user_name!=''}
                 <a href="user.html" class="head"><img src="{if $user[img]}
                 {$user[img]}
-                {else}{$images}/avatar.jpg
+                {else} {$images}/avatar.jpg
                 {/if}" alt="70*70"/></a>
                 <p>Hi~您好！</p>
-                {if $user[grade_name]}-->
+                {if $user[grade_name]}
                 <a href="user.html" class="btn-login">{$user[grade_name]}</a>
-                {/if}-->
+                {/if}
                 <a href="user.html" class="btn-regist">{$user_name}</a>
                 {else}
                 <a href="login.html" class="head"><img src="$images/avatar.jpg" alt="70*70"/></a>
@@ -73,7 +73,7 @@
                 <ul>
                     {loop $diy_mobiletuisong as $p}-->
                     <li><a href="{$p['url']}">{$p[name]}</a></li>
-                    {/loop}-->
+                    {/loop}
                 </ul>
             </div>
         </div>
