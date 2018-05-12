@@ -1,0 +1,54 @@
+<div class="footer">
+			<div class="nb">
+{$diy_indexfoot}
+				<div class="foot-navson">
+					<div class="navsonbox">
+					{loop $help as $p}
+						<dl>
+							<dt><a href="{$p['url']}" target="_blank">{$p['name']}</a></dt>
+						{loop $p['son'] as $v}
+							<dd><a href="{$v[url]}" target="_blank">{$v[name]}</a></dd>
+						{/loop}
+						</dl>
+						{/loop}
+					</div>
+					<div class="foot-service">
+						<p>客服电话</p>
+						<div class="tel">{$diy_mobile}</div>
+						<a href="http://wpa.qq.com/msgrd?v=3&uin={$diy_qq}&site=qq&menu=yes" target="_blank" class="btn-service">在线客服</a>
+					</div>
+				</div>
+				<div class="foot-sortnav">
+					<div class="box"><a href="/" target="_blank">首页</a></div>
+					{loop $nav_footer as $p}
+					<div class="box"><a href="{$p[url]}"
+										{if $p['target']==1}
+										target="_blank"
+										{/if}
+										>{$p[name]}</a></div>
+					{/loop}
+				</div>
+				{if $link2}
+				<div class="foot-sortnav">
+					{loop $link as $p}
+					<a href="{$p[url]}" {if $p['target']==1}
+											target="_blank"
+												{/if}
+												><img src="{$p['img']}" width="120" height="60"/>
+												<br />
+						{$p['title']}</a>
+					{/loop}
+				</div>
+				{/if}
+				<div class="copyright">
+					<p>@2018<a href="http://www.yunec.cn/" target="_blank">三三电商系统</a>&nbsp;版权所有</p>
+					<br />
+					<p>工信部备案号：{$ym_icp}</p>
+				</div>
+			</div>
+		</div>
+		<p style="display: none;">
+			{if $ym_site_statice}
+			{$ym_site_statice}
+			{/if}
+		</p>

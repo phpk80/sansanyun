@@ -1,0 +1,4 @@
+select sum(b.num) cnum from yec_cart a left join yec_cart_item b on a.id=b.cid where 1  and uid=56
+select sum(b.num) cnum from yec_cart a left join yec_cart_item b on a.id=b.cid where 1  and uid=56
+select sum(b.num) cnum from yec_cart a left join yec_cart_item b on a.id=b.cid where 1  and uid=56
+select sum(b.num) cnum from yec_cart a left join yec_cart_item b on a.id=b.cid where 1  and uid=56

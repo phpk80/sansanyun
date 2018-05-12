@@ -1,0 +1,10 @@
+{
+  "name": "sansanyun",
+  "description" : "php framework",
+  "require" : {
+    "php" :   ">=5.3.0",
+    "filp/whoops" :  "*",
+    "symfony/var-dumper" : "*",
+    "catfan/medoo" : "*"
+  }
+}

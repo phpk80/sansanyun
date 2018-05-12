@@ -1,0 +1,15 @@
+select sum(b.num) cnum from yec_cart a left join yec_cart_item b on a.id=b.cid where 1  and uid=56
+select m.*,g.grade_name,g.discount*0.01 discount,g.point_require from yec_member m left join yec_member_grade g on m.grade_id = g.grade_id where id=56
+SELECT distinct c.`name` as cat_name, g.* FROM yec_goods g JOIN yec_category c ON g.cat_id = c.id where 1 and g.goods_id  IN ('121','155','120','129')  and g.status=1 and uptime<=1526086861 order by addtime desc limit 0,4
+select type,val from yec_sp_discount WHERE status=1 and start_time<=1526086861 and end_time>=1526086861 and find_in_set(155, goods_ids)  and (grade_ids=0 or find_in_set((select grade_id from yec_member where id=56), grade_ids))  order  by addtime desc
+select m.*,g.grade_name,g.discount*0.01 discount,g.point_require from yec_member m left join yec_member_grade g on m.grade_id = g.grade_id where id=56
+SELECT min(price) min_price,min(price) max_price  FROM yec_goods_spec where goods_id=155
+select type,val from yec_sp_discount WHERE status=1 and start_time<=1526086861 and end_time>=1526086861 and find_in_set(121, goods_ids)  and (grade_ids=0 or find_in_set((select grade_id from yec_member where id=56), grade_ids))  order  by addtime desc
+select m.*,g.grade_name,g.discount*0.01 discount,g.point_require from yec_member m left join yec_member_grade g on m.grade_id = g.grade_id where id=56
+SELECT min(price) min_price,min(price) max_price  FROM yec_goods_spec where goods_id=121
+select type,val from yec_sp_discount WHERE status=1 and start_time<=1526086861 and end_time>=1526086861 and find_in_set(129, goods_ids)  and (grade_ids=0 or find_in_set((select grade_id from yec_member where id=56), grade_ids))  order  by addtime desc
+select m.*,g.grade_name,g.discount*0.01 discount,g.point_require from yec_member m left join yec_member_grade g on m.grade_id = g.grade_id where id=56
+SELECT min(price) min_price,min(price) max_price  FROM yec_goods_spec where goods_id=129
+select type,val from yec_sp_discount WHERE status=1 and start_time<=1526086861 and end_time>=1526086861 and find_in_set(120, goods_ids)  and (grade_ids=0 or find_in_set((select grade_id from yec_member where id=56), grade_ids))  order  by addtime desc
+select m.*,g.grade_name,g.discount*0.01 discount,g.point_require from yec_member m left join yec_member_grade g on m.grade_id = g.grade_id where id=56
+SELECT min(price) min_price,min(price) max_price  FROM yec_goods_spec where goods_id=120
