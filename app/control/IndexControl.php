@@ -10,7 +10,7 @@ use core\lib\cache\CacheFactory;
 use core\lib\Model;
 use core\lib\Template;
 use core\logic\Goods;
-use core\logic\news;
+use core\logic\News;
 use core\Sansanyun;
 
 class IndexControl extends BaseControl
