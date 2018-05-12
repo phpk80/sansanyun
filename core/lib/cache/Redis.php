@@ -25,4 +25,10 @@ class Redis extends Cache
         $this->redis->connect($config['host'],$config['port']);
         echo $this->redis->ping();
     }
+    public function set($key,$value)
+    {
+        if(is_array($value)){
+            $this->redis->hMset($key,$value);
+        }
+    }
 }

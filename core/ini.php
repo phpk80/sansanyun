@@ -41,7 +41,7 @@ if(strtolower(MODULE)=='api'){
     set_error_handler('errhandler',E_ALL ^ E_NOTICE);
     //set_exception_handler('handler');
 }
-include SANSANYUN.'/core/SANSANYUN.php';
+include SANSANYUN.'/core/Sansanyun.php';
 
 spl_autoload_register('\core\SANSANYUN::load');
 
