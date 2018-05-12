@@ -19,7 +19,6 @@ class Sansanyun
         //$log = LogFactory::factory();
         //$log->log('test');
         //$log->log('test111');
-
         $route = new \core\lib\Route();
         $ctrl  =  $route->ctrl;
         $action = $route->action;
@@ -31,7 +30,7 @@ class Sansanyun
         }
 
         if(!file_exists($ctrlfile)){
-            throw new \Exception('控制器'.$ctrlfile.'不存在');
+            throw new \Exception('控制�?.$ctrlfile.'不存�?);
         }
 
 
@@ -39,7 +38,7 @@ class Sansanyun
         $control->$action();
       //  p('ok');
     }
-    //自动加载类
+    //自动加载�?
     static function load($class){
 
         $class = str_replace('\\','/',$class);
@@ -74,7 +73,7 @@ class Sansanyun
             extract($this->assign);
             include $path;
         }else{
-            throw new \Exception('文件不存在:'.$file);
+            throw new \Exception('文件不存�?'.$file);
         }
     }
 }
