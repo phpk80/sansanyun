@@ -22,7 +22,7 @@ class Sansanyun
         $route = new \core\lib\Route();
         $ctrl  =  $route->ctrl;
         $action = $route->action;
-        dump($route);
+//        dump($route);
 
         $ctrlfile = APP.'/control/'.ucwords($ctrl).'Control.php';
         $ctrlClass = "\\".MODULE.'\\control\\'.ucwords($ctrl).'Control';
