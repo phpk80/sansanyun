@@ -15,7 +15,7 @@ class Route
     public $ctrl = '';
     public $action = '';
     public function __construct(){
- 
+
         if(!$_SERVER['PATH_INFO']||$_SERVER['PATH_INFO']=='/'){
             $this->ctrl='index';
             $this->action='index';
