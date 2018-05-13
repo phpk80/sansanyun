@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /* *
  * 功能：支付宝服务器异步通知页面
@@ -16,7 +16,9 @@ $alipayNotify = new AlipayNotify($alipay_config);
 $verify_result = $alipayNotify->verifyNotify();
 
 if($verify_result) {//验证成功	
-	$batch_no = $_POST['batch_no'];//批次号	$success_num = $_POST['success_num'];//批量退款数据中转账成功的笔数
+
+	$batch_no = $_POST['batch_no'];//批次号
+	$success_num = $_POST['success_num'];//批量退款数据中转账成功的笔数
 	$result_details = $_POST['result_details'];//批量退款数据中的详细信息
 
 	//判断是否在商户网站中已经做过了这次通知返回的处理

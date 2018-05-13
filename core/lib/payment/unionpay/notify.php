@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /*银联在线支付   前台同步通知*/
 

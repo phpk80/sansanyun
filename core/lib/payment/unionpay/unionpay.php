@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /**
  *银联支付  跳转网关支付产品

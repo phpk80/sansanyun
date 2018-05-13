@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /** 
  * //手机版和电脑版共用

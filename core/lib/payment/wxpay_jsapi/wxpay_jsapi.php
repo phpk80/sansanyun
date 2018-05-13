@@ -1,5 +1,5 @@
 <?php 
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /** 公众号支付  微信内网页支付 */
 

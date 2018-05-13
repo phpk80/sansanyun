@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 /* *
  * 类名：AlipayNotify
  * 功能：支付宝通知处理类

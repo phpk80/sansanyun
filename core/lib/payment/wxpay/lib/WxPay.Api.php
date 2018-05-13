@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 require_once pay_root."wxpay/lib/WxPay.Exception.php";
 require_once  pay_root."wxpay/lib/WxPay.Config.php";

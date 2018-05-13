@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 $payment_mod = array();
 $payment_mod['pay_code']    = basename(__FILE__, '.php'); //代码

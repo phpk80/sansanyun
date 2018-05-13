@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 ini_set('date.timezone','Asia/Shanghai');
 error_reporting(E_ERROR);

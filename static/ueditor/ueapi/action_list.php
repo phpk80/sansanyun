@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 /**
  * 获取已上传的文件列表
  * User: Jinqn

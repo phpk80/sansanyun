@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 /*银联在线支付   异步通知*/
 include_once pay_root . 'unionpay/sdk/acp_service.php';

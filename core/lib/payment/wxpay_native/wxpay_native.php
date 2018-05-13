@@ -1,5 +1,5 @@
 <?php
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 /**
  *微信扫码支付
  * 1、调用统一下单，取得code_url，生成二维码

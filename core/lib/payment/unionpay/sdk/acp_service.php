@@ -1,6 +1,6 @@
 <?php
 namespace com\unionpay\acp\sdk;
-if (!defined('in_mx')) {exit('Access Denied');}
+if (!defined('in_sansan')) {exit('Access Denied');}
 
 header ( 'Content-type:text/html;charset=utf-8' );
 include_once 'log.class.php';
