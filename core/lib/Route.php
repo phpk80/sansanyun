@@ -15,12 +15,14 @@ class Route
     public $ctrl = '';
     public $action = '';
     public function __construct(){
-
+        dump($_SERVER['PATH_INFO']);
+        exit();
         if(!isset($_SERVER['PATH_INFO'])||$_SERVER['PATH_INFO']=='/'){
             $this->ctrl='index';
             $this->action='index';
          }else{
             $path = $_SERVER['PATH_INFO'];
+
             $patharr = explode('/',trim($path,'/'));
             isset($patharr[0]) ? $this->ctrl=$patharr[0] : $this->ctrl='index';
             unset($patharr[0]);
