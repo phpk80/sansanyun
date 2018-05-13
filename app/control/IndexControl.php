@@ -101,6 +101,7 @@ class IndexControl extends BaseControl
 
         $nowtime = $spike[end_time]-$time;
         $nexttime = $nextspike[start_time]-$time;
+
         $this->assign(array(
             'nav_footer' => $nav_footer,
             'diy_mobile' => $diy_mobile,
