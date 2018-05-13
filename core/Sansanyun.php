@@ -23,7 +23,7 @@ class Sansanyun
         $ctrl  =  $route->ctrl;
         $action = $route->action;
         dump($route);
-        exit();
+
         $ctrlfile = APP.'/control/'.ucwords($ctrl).'Control.php';
         $ctrlClass = "\\".MODULE.'\\control\\'.ucwords($ctrl).'Control';
         if(strtolower(MODULE)=='api'){
