@@ -123,8 +123,7 @@ class IndexControl extends BaseControl
             'diy_timespike' => $diy_timespike,
             'diy_indexfoot' => $diy_indexfoot
         ));
-      dump($spike);
-      exit();
+     
         $this->show('index');
     }
 
