@@ -26,10 +26,10 @@ class Cache
     {
 
     }
-    public function set(){
+    public function set($key,$value){
 
     }
-    public function get(){
+    public function get($key){
 
     }
 

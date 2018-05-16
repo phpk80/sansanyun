@@ -32,6 +32,12 @@ class IndexControl extends BaseControl
         $nav = get_nav();//导航
         $nav_footer = get_nav('bot');//底部导航
         $uid =  $this->user->get_userid();
+//        $redis = CacheFactory::getInstance('redis');
+//        if($r = $redis->get('diy_indexfloor')){
+//            $diy_indexfloor = unserialize($r);
+//        }else{
+//            $redis->set('diy_indexfloor',serialize($diy_indexfloor));
+//        }
         //楼层
 
         foreach ($diy_indexfloor as $k=>$v){
@@ -123,7 +129,7 @@ class IndexControl extends BaseControl
             'diy_timespike' => $diy_timespike,
             'diy_indexfoot' => $diy_indexfoot
         ));
-     
+
         $this->show('index');
     }
 
@@ -203,6 +209,8 @@ class IndexControl extends BaseControl
             }
         }
         return $remmend_goods;
+    }
+    function parsered(){
 
     }
 }

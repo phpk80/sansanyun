@@ -21,14 +21,20 @@ class Redis extends Cache
     public function connect()
     {
         $config = Conf::all('redis');
-        $this->redis = new \Redis();
-        $this->redis->connect($config['host'],$config['port']);
-        echo $this->redis->ping();
+        $redis = new \Predis\Client('tcp://127.0.0.1:6379');
+        $redis->connect();
+        $this->redis=$redis;
     }
     public function set($key,$value)
     {
-        if(is_array($value)){
-            $this->redis->hMset($key,$value);
-        }
+//        if(is_array($value)){
+//            $this->redis->hMset($key,$value);
+//        }
+        $this->redis->set($key,$value);
+    }
+
+    public function get($key)
+    {
+       return $this->redis->get($key);
     }
 }
